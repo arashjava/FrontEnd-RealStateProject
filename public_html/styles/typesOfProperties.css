@@ -1,0 +1,50 @@
+.mySlides {display:none}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  margin-left: 90px;
+}
+#title{
+/*	  margin-left: 200px; */
+	  text-align: center
+}
+
+
+#filter {
+	  margin-left: 110px;
+	  font-size: 18px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 90%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+  margin-left: 70px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+  margin-left: 70px;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+  margin-left: 70px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Belle Maison- Slides</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="styles/slides.css">
+<style>
+.mySlides {display:none}
+
+
+</style>
+<body>
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides"  id="img1"  style="width:100%"> 
+  <img class="mySlides"  id="img2"  style="width:100%">
+  <img class="mySlides"  id="img3"  style="width:100%">
+  <img class="mySlides"  id="img4" style="width:100%"> 
+  <img class="mySlides"  id="img5" style="width:100%"> 
+  <img class="mySlides"  id="img6" style="width:100%"> 
+  <img class="mySlides"  id="img7" style="width:100%"> 
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)"> Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next </button>
+  </div>
+  <button class="w3-button demo" id="btn1" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" id="btn2" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" id="btn3" onclick="currentDiv(3)">3</button> 
+  <button class="w3-button demo" id="btn4" onclick="currentDiv(4)">4</button> 
+  <button class="w3-button demo" id="btn5" onclick="currentDiv(5)">5</button> 
+  <button class="w3-button demo" id="btn6" onclick="currentDiv(6)">6</button> 
+  <button class="w3-button demo" id="btn7" onclick="currentDiv(7)">7</button> 
+</div>
+
+<header>
+  <h1 id=homeType ></h1>
+</header>
+
+<article>
+
+<section>
+<h2 id=mls></h2>
+
+
+<div class="gen2">
+<h2>Address</h2>
+<ul >
+<h4 id=pAddr></h4>
+</ul>
+</div>
+
+<div class="gen2">
+<h2>General Information</h2>
+<ul>
+<h4 id=bedroom></h4>
+<h4 id=bathroom></h4>
+<h4 id=maintenance></h4>
+<h4 id=desc></h4>
+</ul>
+</div>
+</section>
+
+   
+<div class="gen2">
+ <h2>Amneties</h2>
+<ul >
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+<li class="liAmneties"></li>
+</ul>
+</div>
+
+<div class="gen2">
+ <h2>Features</h2>
+<ul >
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+<li class="liFeatures"></li>
+</ul>
+</div>
+
+<div class="gen2">
+ <h2>Contact</h2>
+<ul >
+<h4 id="name"></h4>
+<h4 id="company"></h4>
+<h4 id="address"></h4>
+<h4 id="phone"></h4>
+<h4 id="website"></h4>
+</ul>
+</div>
+
+
+</section>
+
+</article>
+
+<footer>
+<p>&copy; 2017 Arash Shadmani. All rights reserved.</p>
+</footer>
+
+
+
+<script src="data/data.js"></script>
+<script src="scripts/slides.js"></script>
+</body>
+</html>

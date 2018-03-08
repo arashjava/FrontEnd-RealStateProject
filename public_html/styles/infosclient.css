@@ -1,0 +1,32 @@
+@CHARSET "ISO-8859-1";
+.slide {
+	background-color: rgba(74, 98, 22, 0.4);
+	text-align: center;
+}
+
+.slide .header {
+	position: absolute;
+	top: 25vh;
+	margin-top: -35px;
+	margin-left: 5px;
+	font-size: 120%;
+	left: 10vw;
+	letter-spacing: 5px;
+}
+
+.dataTable {
+	position: absolute;
+	width: 80vw;
+	min-width: 600px;
+	left: 0;
+	right: 0;
+	top: 25vh;
+	margin: 0 auto;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+#inquiryForm {
+     width: 95%;
+     margin-left: 2cm;
+}

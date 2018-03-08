@@ -1,0 +1,31 @@
+#panel, #flip {
+     padding: 5px;
+    font-size: 33px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+
+#panel {
+    padding: 5px;
+    display: none;
+}
+
+#dateTime, #flip {
+     padding: 5px;
+    font-size: 10px;
+    text-align: left;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+
+#dateTime {
+    padding: 5px;
+    display: none;
+}

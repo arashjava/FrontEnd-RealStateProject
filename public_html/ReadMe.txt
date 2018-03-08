@@ -1,0 +1,1 @@
+For running this project, you just open menu.html file.

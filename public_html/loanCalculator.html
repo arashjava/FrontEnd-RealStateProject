@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles/loanCalculator.css">
+<link rel="stylesheet" href="styles/common.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="scripts/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
+<script src="scripts/common.js"></script>
+
+<meta charset="ISO-8859-1">
+<title>Belle Maison- Calculator</title>
+</head>
+<body>
+<div id="panel">Belle Maison</div>  
+<div id="dateTime"></div>  
+<div class="w3-sidebar w3-bar-blue w3-blue w3-xxlarge" style="width:70px">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-home" onclick="location.href='menu.html'"></i></a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search" onclick="location.href='typesOfProperties.html'"></i></a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope" onclick="location.href='infosClients.html'"></i></a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-calculator" onclick="location.href='loanCalculator.html'"></i></a>
+</div>
+
+<div id="allContent" class="smpc-div">
+<form id="mortgagecalc" name=mortgagecalc method=POST>
+	<p>How much will you be borrowing?<br>
+	<input type=text onkeypress="return validNumber(event)" name=loan size=10> <span class="smpc-error" id="loanError"></span></p>
+	<p>What will be the term of this mortgage (in years)?<br>
+	<input type=text onkeypress="return validNumber(event)" name=years size=5> <span class="smpc-error" id="yearsError"></span></p>
+	<p>What will be the interest rate?<br>
+	<input type=text onkeypress="return validNumber(event)" name=rate size=5> <span class="smpc-error" id="rateError"></span></p>
+	<input type=button onClick="return myPayment()" value=Calculate>  <input type=button onClick="return myPaymentReset()" value=Reset>
+</form>
+<small>Instructions: Enter numbers and decimal points. No commas or other characters.</small>
+<p class="smpc-monthlypayment" id="monthlyPayment"> </p>
+<p class="smpc-friendlyreminder" id="friendlyReminder">This is your principal + interest payment, or in other words, what you send to the bank each month. But remember, you will also have to budget for homeowners insurance, real estate taxes, and if you are unable to afford a 20% down payment, Private Mortgage Insurance (PMI). These additional costs could increase your monthly outlay by as much 50%, sometimes more.</p>
+</div>
+<script src="scripts/loanCalculator.js"></script>
+</body>
+</html>

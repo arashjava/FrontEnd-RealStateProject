@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/common.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/typesOfProperties.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="scripts/common.js"></script>
+<style>
+
+</style>
+  	   
+</head>
+<body>
+<div id="panel">Belle Maison</div>
+<div id="dateTime"></div>  
+<div class="w3-sidebar w3-bar-blue w3-blue w3-xxlarge" style="width:70px">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-home" onclick="location.href='menu.html'"></i></a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search" onclick="location.href='typesOfProperties.html'"></i></a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope" onclick="location.href='infosClients.html'"></i></a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-calculator" onclick="location.href='loanCalculator.html'"></i></a>
+</div>
+
+<h2 id="title" >List of available properties</h2>
+<label id= "filter" class="filter" >Filter by:</label>
+<input type="text" class="filter" id="myInput1" onkeyup="filterList(1, 'myInput1')" placeholder="Home Style " title="Type a Home style">
+<input type="text" class="filter" id="myInput3" onkeyup="filterList(3, 'myInput3')" placeholder="# of Bedroom " title="Type # of Bedrooms">
+<input type="text" class="filter" id="myInput4" onkeyup="filterList(4, 'myInput4')" placeholder="# of Bathroom " title="Type # of Bathrooms">
+<input type="text" class="filter" id="myInput5" onkeyup="filterList(5, 'myInput5')" placeholder="Neighborhood " title="Neighborhood">
+
+<table id="myTable" class="menu">
+  <tr class="header">
+    <th style="width:8%;">MLS #</th>
+    <th style="width:8%;">Home Style</th>
+    <th style="width:8%;">Price</th>
+    <th style="width:8%;"># of Bedrooms</th>
+    <th style="width:8%;"># of Bathrooms</th>
+    <th style="width:8%;">Neighborhood </th>
+  </tr>
+
+</table>
+
+<script src="data/data.js"></script>
+<script src="scripts/typesOfProperties.js"></script>
+</body>
+</html>
